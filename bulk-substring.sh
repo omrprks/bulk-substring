@@ -1,13 +1,21 @@
 #!/usr/bin/env sh
 
+function error {
+  local errorString=$1
+
+  echo ${errorString}
+  exit 1
+}
+
+[ $# -lt 2 ] && error "Invalid arguments"
+
 MATCH=$1
 REPLACE=$2
 
 FILES=$(ls *${MATCH}* 2>/dev/null)
 
 if [ $? != "0" ]; then
-  echo No matches found
-  exit 1
+  error "No matches found"
 fi
 
 for file in ${FILES}; do
