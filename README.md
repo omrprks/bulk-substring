@@ -14,3 +14,6 @@ To this:
 ```sh
 no1     no2     no3     no4     no5     sno1    sno2    sno3    sno4    sno5
 ```
+
+## License
+[MIT](./LICENSE)
