@@ -15,5 +15,14 @@ To this:
 no1     no2     no3     no4     no5     sno1    sno2    sno3    sno4    sno5
 ```
 
+## Installation
+```sh
+$ make install
+```
+Alternatively without make, you may run the following:
+```sh
+$ cp bulk-substring.sh /usr/local/bin/bulk-substring
+```
+
 ## License
 [MIT](./LICENSE)
